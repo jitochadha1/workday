@@ -10,7 +10,8 @@ textarea{
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .jumbotron {
@@ -22,16 +23,20 @@ textarea{
 }
 
 .description{
-  white-space: pre-wrap;
+  
+  flex-grow: 1;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  display: flex;
+  width: 100%;
+  
 }
 
 .row {
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   height: 80px;
   border-top: 1px solid white;;
 }
@@ -40,6 +45,11 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-weight: bold;
 }
 
 .past {
@@ -63,9 +73,23 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 30px;
   transition: all .3s ease-in-out;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
